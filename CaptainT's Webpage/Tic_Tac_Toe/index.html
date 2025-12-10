@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+
+    <div id="player-select">
+        <p>Choose your symbol:</p>
+        <button onclick="startGame('X')">Play as X</button>
+        <button onclick="startGame('O')">Play as O</button>
+    </div>
+    <div id="scoreboard">
+    <div id="scoreboard">
+   <div id="scoreboard">
+    <p>Score — X: <span id="scoreX">0</span> | O: <span id="scoreO">0</span></p>
+</div>
+
+    <div class="board" id="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <button id="reset">Reset Game</button>
+
+    <p id="status"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

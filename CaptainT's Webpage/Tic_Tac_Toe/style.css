@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --bg-color: #f0f8ff;
+    --text-color: #ffffff;
+    --cell-bg: white;
+    --cell-hover: #e0e0e0;
+    --win-bg: #90ee90;
+    --button-bg: #4caf50;
+    --button-hover: #45a049;
+    --reset-bg: #2196f3;
+    --reset-hover: #1976d2;
+}
+
+body.dark {
+    --bg-color: #1e1e1e;
+    --h1-color: rgb(0, 170, 255);
+    --text-color: #f0f0f0;
+    --cell-bg: #333;
+    --cell-hover: #555;
+    --win-bg: #2e8b57;
+    --button-bg: #555;
+    --button-hover: #777;
+    --reset-bg: #444;
+    --reset-hover: #666;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: #333;
+} 
+
+#toggle-theme {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1em;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#toggle-theme:hover {
+    background-color: var(--button-hover);
+}
+
+/* Keep the rest of your styles, but replace hardcoded colors with variables */
+.cell {
+    background-color: var(--cell-bg);
+}
+
+.cell:hover {
+    background-color: var(--cell-hover);
+}
+
+.cell.win {
+    background-color: var(--win-bg);
+}
+
+#reset {
+    background-color: var(--reset-bg);
+}
+
+#reset:hover {
+    background-color: var(--reset-hover);
+}
+
+body.dark h1 {
+    color: var(--h1-color) 
+}
+
+#player-select {
+    margin-top: 20px;
+}
+
+#player-select button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#player-select button:hover {
+    background-color: #45a049;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #333;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+#status {
+    font-size: 1.2em;
+    color: #444;
+    margin-top: 10px;
+}
+#scoreboard {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #1976d2;
+}
+
+.cell.win {
+    background-color: #90ee90;
+}
